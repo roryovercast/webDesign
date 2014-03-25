@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role ="navigation">
+<div class="nav navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+      <span class="sr-only">Toggle navigation</span>
+      MENU
+    </button>
+</div>
+<div class="collapse navbar-collapse" id="collapse">
+    <ul class="nav navbar-nav">
+        <li><%= nav_link('Home', '/')%></li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown">About <span class="caret"></span></a>
+        	<ul class="dropdown-menu">
+            	<li><a href="#">Dr. Winthrop</a></li>
+                <li><a href="#">Dr. Chase</a></li>
+                <li><a href="#">Dr. Sanders</a></li>
+            </ul>                    
+        </li>
+        <%= nav_link('Test', '/test/index') %>
+        <li><a href="#">Photo Gallery</a></li>
+        <li><a href="#">Contact</a></li>  
+    </ul> 
+</div>
+</nav>
