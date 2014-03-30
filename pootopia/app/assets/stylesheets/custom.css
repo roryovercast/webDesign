@@ -71,6 +71,29 @@ font-size: 26px;
   min-height: 250px;
 }
 
+/* CUSTOMIZE JUMBOTRON
+-------------------------------------------------- */
+.jumbotron {
+     position: relative;
+    background: none;
+     padding: 5px;
+     margin-bottom: 60px;
+     font-size: 10px;
+     font-weight: 200;
+     line-height: 2.1428571435;
+     height: 250px;
+}
+.jumbotron:after {
+     content:"";
+     background: url("petersbase.jpg");
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -164,6 +187,23 @@ font-size: 26px;
   .carousel img {
     min-height: 400px;
   }
+
+  .jumbotron {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    height: 400px;
+}
+  /*.jumbotron:after {
+    content:"";
+    background: url("petersbase.jpg");
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}*/
 
   .featurette-heading {
     font-size: 50px;
