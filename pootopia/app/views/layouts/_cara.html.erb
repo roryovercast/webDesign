@@ -1,47 +1,58 @@
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <%= image_tag(@first_slide, class: "img-responsive", alt: "First slide") %>
-      <div class="container">
+<!-- main -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag(@first_slide, class: "img-responsive", alt: "First slide") %>
         <div class="carousel-caption">
-          <h1><%= @first_slide_head %></h1>
-          <p><%= @first_slide_content %></p>
-          <p><%= link_to("More Info", {:controller => 'pages', :action => 'minecraft'}, :class => 'btn btn-lg btn-primary') %></p>
+          <div class="carousel-box">
+            <h2 class="carousel-text"><%= @first_slide_head %></h2>
+            <p class="carousel-text"><%= @first_slide_content %></p>
+          </div>
+          <div class="carousel-more">
+            <%= link_to("More Info", {:controller => 'pages', :action => 'minecraft'}, :class => 'btn btn-lg btn-primary') %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <%= image_tag(@second_slide, class: "img-responsive", alt: "Second slide") %>
-      <div class="container">
+      <div class="item">
+        <%= image_tag(@second_slide, class: "img-responsive", alt: "First slide") %>
         <div class="carousel-caption">
-          <h1><%= @second_slide_head %></h1>
-          <p><%= @second_slide_content %></p>
-          <p><%= link_to("More Info", {:action => 'minecraft'}, :class => 'btn btn-lg btn-primary') %></p>
+          <div class="carousel-box">
+            <h2 class="carousel-text"><%= @second_slide_head %></h2>
+            <p class="carousel-text"><%= @second_slide_content %></p>
+          </div>
+          <div class="carousel-more">
+            <%= link_to("More Info", "#", :class => 'btn btn-lg btn-primary') %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <%= image_tag(@third_slide, class: "img-responsive", alt: "Third slide") %>
-      <div class="container">
+      <div class="item">
+        <%= image_tag(@third_slide, class: "img-responsive", alt: "First slide") %>
         <div class="carousel-caption">
-          <h1><%= @third_slide_head %></h1>
-          <p><%= @third_slide_content %></p>
-          <p><%= link_to("More Info", {:action => 'minecraft'}, :class => 'btn btn-lg btn-primary') %></p>
+          <div class="carousel-box">
+            <h2 class="carousel-text"><%= @third_slide_head %></h2>
+            <p class="carousel-text"><%= @third_slide_content %></p>
+          </div>
+          <div class="carousel-more">
+            <%= link_to("More Info", "#", :class => 'btn btn-lg btn-primary') %>
+          </div>
         </div>
       </div>
+
     </div>
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="icon-next"></span>
-  </a>  
-</div>
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+
