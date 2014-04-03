@@ -143,6 +143,7 @@ p.carousel-text {
 video {
   width: 100% !important;
   height: auto !important;
+  max-width: 600px;
   border-radius: 50px;
 }
 
